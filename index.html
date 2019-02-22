@@ -32,7 +32,7 @@
 
     <a class="navbar-brand menu" href="#page-top">
 
-      <span class="d-block d-lg-none"> Luis Carlos Oliveira da Silva </span>
+      <span class="d-block d-lg-none" id="efect"> Luis Carlos Oliveira da Silva </span>
 
       <span class="d-none d-lg-block">
 
@@ -378,6 +378,17 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.js"></script>
+  
+  <script>
+    function typeWhite(elemento) {
+      const textoArray = elemento.innerHTML.split("");
+      elemento.innerHTML = "";
+      textoArray.forEach((letra, i) => {
+        setTimeout( () => elemento.innerHTML += letra, 75 * i )
+      });
+    }
+    typeWhite(document.querySelector("#efect"));
+  </script>
 
 </body>
 
