@@ -382,12 +382,10 @@
   <script>
     function typeWhite(elemento) {
       
-      // for (int i = 0; i <= elemento.lenght; i++) {
+      for (int i = 0; i <= 30) {
         
       const textoArray = elemento.innerHTML.split("");
       elemento.innerHTML = "";
-        
-      for (int i = 0; i <= 30) {
         
       textoArray.forEach((letra, i) => {
         setTimeout( () => elemento.innerHTML += letra, 75 * i )
