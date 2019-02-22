@@ -19,6 +19,10 @@ function scrollToPosition(to) {
   smoothScrollTo(0, to);
 }
 
+
+// -----------------------------------------------------------------------------------------
+
+
 function scrollToIdOnClick(event) {
 	event.preventDefault();
 	const to = getScrollTopByHref(event.currentTarget)- 80;
