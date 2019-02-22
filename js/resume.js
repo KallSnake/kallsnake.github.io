@@ -3,7 +3,7 @@
 // Verificar a distância entre o alvo e o topo
 // Animar o scroll até o alvo
 
-const menuItems = document.querySelectorAll('.navbar-nav a[href^="#"]');
+const menuItems = document.querySelectorAll('.menu a[href^="#"]');
 
 function getScrollTopByHref(element) {
 	const id = element.getAttribute('href');
