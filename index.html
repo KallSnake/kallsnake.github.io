@@ -382,15 +382,19 @@
   <script>
     function typeWhite(elemento) {
       
-      for (int i = 0; i <= elemento.lenght; i++) {
+      // for (int i = 0; i <= elemento.lenght; i++) {
         
       const textoArray = elemento.innerHTML.split("");
       elemento.innerHTML = "";
+        
+      for (int i = 0; i <= elemento.lenght) {
+        
       textoArray.forEach((letra, i) => {
         setTimeout( () => elemento.innerHTML += letra, 75 * i )
       });
       
     }
+      
     }
     typeWhite(document.querySelector("#efect"));
   </script>
