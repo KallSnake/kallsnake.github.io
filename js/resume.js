@@ -19,10 +19,6 @@ function scrollToPosition(to) {
   smoothScrollTo(0, to);
 }
 
-
-// -----------------------------------------------------------------------------------------
-
-
 function scrollToIdOnClick(event) {
 	event.preventDefault();
 	const to = getScrollTopByHref(event.currentTarget)- 80;
@@ -32,6 +28,10 @@ function scrollToIdOnClick(event) {
 menuItems.forEach(item => {
 	item.addEventListener('click', scrollToIdOnClick);
 });
+
+
+// -----------------------------------------------------------------------------------------
+
 
 // Caso deseje suporte a browsers antigos / que não suportam scroll smooth nativo
 /**
