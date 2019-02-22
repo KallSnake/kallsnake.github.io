@@ -380,10 +380,11 @@
   <script src="js/resume.js"></script>
   
   <script>
+    
+    for (int i = 0; i <= 30) {
+       
     function typeWhite(elemento) {
-      
-      for (int i = 0; i <= 30) {
-        
+     
       const textoArray = elemento.innerHTML.split("");
       elemento.innerHTML = "";
         
@@ -391,7 +392,7 @@
         setTimeout( () => elemento.innerHTML += letra, 75 * i )
       });
       
-     }
+    }
       
     }
     typeWhite(document.querySelector("#efect"));
