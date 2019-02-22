@@ -93,23 +93,6 @@ p.lead {
   outline-color: orange;
 }
 
-
-#efect:after {
-		content: "|";
-		margin-left: 5px;
-		opacity: 1; 
-		animation: pisca .7s infinite;
-	}
-	@keyframes pisca {
-		0%, 100% {
-			opacity: 1;
-		}
-		50% {
-			opacity: 0;
-		}
-	}
-
-
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
