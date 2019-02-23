@@ -188,7 +188,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: red;
+  color: orange;
 }
 
 .hvr-underline-from-center {
